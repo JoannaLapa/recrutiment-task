@@ -10,12 +10,13 @@ body {
 	font-family: 'Noto Sans JP', sans-serif;
 }
 
-main {
+.wrapper {
+	align-items: center;
 	display: flex;
 	flex-direction: column;
-	justify-items: center;
-	align-items: center;
 	gap: 40px;
+	justify-items: center;
+	padding: 32px;
 }
 
 h1 {
@@ -37,6 +38,10 @@ h1 {
 		background-color: #f2f2f2;
 		max-width: 600px;
 	}
+}
+
+.svg-box {
+    flex-shrink: 0;
 }
 
 .list-container {
