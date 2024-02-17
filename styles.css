@@ -1,5 +1,59 @@
-*, ::before, ::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0;
+}
+
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+	gap: 40px;
+}
+
+h1 {
+	padding: 40px;
+}
+
+.box-container {
+	align-items: center;
+	background-color: #a7a7a7;
+	border-radius: 10px;
+	display: flex;
+	column-gap: 40px;
+	max-width: 400px;
+	padding: 32px;
+	width: 100%;
+
+	@media (min-width: 1024px) {
+		align-items: flex-start;
+		background-color: #f2f2f2;
+		max-width: 600px;
+	}
+}
+
+.list-container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	@media (min-width: 1024px) {
+		background-color: #f2f2f2;
+		gap: 0px;
+		max-width: 600px;
+	}
+}
+
+p {
+	font-weight: 700;
+}
+li {
+	font-weight: 400;
 }
